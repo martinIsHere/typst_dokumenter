@@ -320,4 +320,51 @@ $
 $
 Nevermind actually. Kva skal eg gjere då da? Sjekka fasit, dei brukte GG til å visuelt finne info om punkt. _Cringe cheats_.
 
+#pagebreak()
+
+== Raude oppgåver
+
+=== 5.119
+
+#figure(
+  image("assets/freedraw1.png", width: 100%),
+  caption: [Planet $alpha$ og punktet $P$.],
+) <tegn3>
+
+Kuleflatene $K_1$ og $K_2$ er gitte ved
+
+$
+K_1: x^2 - 4x + y^2 - 2y + z^2 - 6z = 11
+$
+
+og
+
+$
+K_2:
+cases(
+  x = 2 dot cos B dot cos L,
+  y = 2 dot cos B dot sin L,
+  z = 2 dot sin B
+)
+$
+
+a) Finn sentrum og radius i dei to kuleflatene.
+
+b) Undersøk kvar punktet $(5, 1, 1)$ ligg i høve til kuleflatene.
+
+c) Finn eventuelle skjeringspunkt mellom kuleflatene og linja $m$ gitt ved
+
+$
+m:
+cases(
+  x = -2,
+  y = t,
+  z = 2 + 4t
+)
+$
+
+d) Finn sentrum og radius i skjeringssirklane mellom $x y$-planet og $K_1$ og $K_2$.
+
+#pagebreak()
+
 == Blanda oppgåver
