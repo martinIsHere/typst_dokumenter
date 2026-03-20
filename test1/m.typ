@@ -134,9 +134,9 @@ $
 Parameterframstillinga for ei kuleflate K med sentrum i origo og radius $r$ er gitt ved
 $
 K: cases(
-  x=r dot cos(B) dot cos(L),
-  y=r dot cos(B) dot sin(L),
-  z = r dot sin(B)
+  x=r dot cos(alpha) dot cos(beta),
+  y=r dot cos(alpha) dot sin(beta),
+  z = r dot sin(alpha)
 )
 $
-der $B in [-90^circle.small, 90^circle.small]$ og $L in chevron.l -180^circle.small, 180^circle.small]$
+der $alpha in [-90^circle.small, 90^circle.small]$ og $beta in chevron.l -180^circle.small, 180^circle.small]$
