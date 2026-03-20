@@ -163,7 +163,7 @@ $ "Amount of bitches"'=underbracket(9999 + 99999 + dots.c + oo, "Neverending, he
 
 === 5.121
 Vi har ei kule, $K$, med radius, $r=5$ og sentrum, $O(1,b,0)$. 
-Kula tangerer planet, $alpha$ gitt ved $3x+12y-4z=329$.
+Kula tangerer planet, $alpha$ gitt ved $3x+12y-4z=-329$.
 Finn $b$.\
 Vi veit at berre eit punkt, $T$, vil ligge i planet og kula.
 Vi veit også at vektoren, $arrow(T O) parallel bold(n)$, der $bold(n)$ er normalvektoren til planet.
@@ -235,5 +235,89 @@ cases(
 (12)=-(397)/(12),
 )
 $
+
+#pagebreak()
+
+=== 5.121
+
+Ei kule har likninga
+
+$
+x^2 + y^2 + z^2 - 2x + 6y - 6z - 30 = 0
+$
+
+Ei anna kule har likninga
+
+$
+x^2 + y^2 + z^2 - 10x - 18y + 6 = 0
+$
+
+*a* #h(0.5cm) Finn radien i kulene.\
+Skjeringskurvene mellom kuleflatene er ein sirkel.\
+*b* #h(0.5cm) Finn radien og sentrum i skjeringssirkelen.
+\
+\
+(*a*) #h(0.5cm) Vi veit at for ein kule med radius, $r$ og sentrum, $O$ er likninga slik
+$
+(x-O_x)^2+(y-O_y)^2+(z-O_z)^2=r^2
+$
+Vi kan derfor omforma likningane for å finne radien. Første kule
+$
+(x^2-2x+1)-1 + (y^2+6y+9)-9 + (z^2-6z+9) - 9 &= 30 \
+
+(x-1)^2-1 + (y+3)^2-9 + (z-3)^2 - 9 &= 30 \
+
+(x-1)^2 + (y+3)^2 + (z-3)^2 &= 30+19=49 \
+
+therefore underline(r_1 = sqrt(49) = 7) \
+and underline(O_1(1,-3,3))
+$
+
+Andre kule:
+$
+(x^2 - 10x + 25) - 25 + (y^2 - 18y + 81) - 81 + z^2 &= -6 \
+
+(x-5)^2 - 25 + (y-9)^2 - 81 + (z-0)^2 &= -6 \
+
+(x-5)^2 + (y-9)^2 + z^2 &= -6 + 25 + 81 = 100 \
+
+therefore underline(r_2 = sqrt(100) = 10) \
+and underline(O_2(5,9,0))
+$
+(*b*) #h(0.5cm) Punktene i skjæringsirkelen vil oppfylle meg kulelikningene.
+
+#figure(
+  image("assets/ggex1.png", width: 80%),
+  caption: [Geogebra illustrasjon av kule 1 og 2],
+) <tegn2>
+La $P$ vere eit punkt på skjæringssirkelen. Den vil da skape ein trekant med sentrumane til kulene.
+
+
+#figure(
+  image("assets/ggex2.png", width: 80%),
+  caption: [Geogebra illustrasjon av trekanten skapt av kulene og eit punkt på skjæringssirkelen.],
+) <tegn2>
+
+Gir opp... Gjer det algebraisk.
+
+$
+(x-1)^2 + (y+3)^2 + (z-3)^2 &= 49 \
+$
+og
+$
+(x-5)^2 + (y-9)^2 + z^2 &= 100 \
+$
+Så
+$
+
+(x-1)^2 + (y+3)^2 + (z-3)^2 - 49
+&=
+(x-5)^2 + (y-9)^2 + z^2 - 100 \
+
+(x-1)^2 -(x-5)^2 + (y+3)^2 - (y-9)^2 + (z-3)^2 - z^2 - 49 + 100
+&=
+ 0   \
+$
+Nevermind actually. Kva skal eg gjere då da? Sjekka fasit, dei brukte GG til å visuelt finne info om punkt. _Cringe cheats_.
 
 == Blanda oppgåver
