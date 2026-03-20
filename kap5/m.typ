@@ -5,6 +5,12 @@
 #set heading(numbering: "1.1 ")
 #set math.vec(delim: "[")
 #set math.mat(delim: "[")
+#set par(spacing: 0.5em, first-line-indent: 0em)
+
+#let oppgave(input) = {
+  strong(input) 
+  h(0.5cm)
+}
 
 = R2
 == Punkt og plan
@@ -332,6 +338,7 @@ Nevermind actually. Kva skal eg gjere då da? Sjekka fasit, dei brukte GG til å
 ) <tegn3>
 
 Kuleflatene $K_1$ og $K_2$ er gitte ved
+#v(1em)
 
 $
 K_1: x^2 - 4x + y^2 - 2y + z^2 - 6z = 11
@@ -347,12 +354,16 @@ cases(
   z = 2 dot sin B
 )
 $
+eller
+$
+K_2 :
+x^2+y^2+z^2=2^2=4
+$
+#v(1em)
 
-a) Finn sentrum og radius i dei to kuleflatene.
-
-b) Undersøk kvar punktet $(5, 1, 1)$ ligg i høve til kuleflatene.
-
-c) Finn eventuelle skjeringspunkt mellom kuleflatene og linja $m$ gitt ved
+#oppgave("a") Finn sentrum og radius i dei to kuleflatene.\
+#oppgave("b") Undersøk kvar punktet $(5, 1, 1)$ ligg i høve til kuleflatene.\
+#oppgave("c") Finn eventuelle skjeringspunkt mellom kuleflatene og linja $m$ gitt ved\
 
 $
 m:
@@ -363,8 +374,57 @@ cases(
 )
 $
 
-d) Finn sentrum og radius i skjeringssirklane mellom $x y$-planet og $K_1$ og $K_2$.
+#v(1em)
+#oppgave("d") Finn sentrum og radius i skjeringssirklane mellom $x y$-planet og $K_1$ og $K_2$.\
+#v(4em)
+#oppgave("(a)")
+
+$
+K_1: &&x^2 - 4x + &&y^2 - 2y + &&z^2 - 6z &= 11 \
+&&(x^2 - 4x + 4) + &&(y^2 - 2y + 1) + &&(z^2 - 6z + 9) &= 11 + 4 + 1 + 9 \
+&&(x - 2)^2 + &&(y - 1)^2 + &&(z - 3)^2 &= 25 = 5^2 \
+$
+$
+therefore underline(O_1(2,1,3) quad and quad r_1=5)
+$
+$K_1$ har sentrum i $O_1(2,1,3)$ og radius lik $5$.\
+$K_2$ har sentrum i origo og radius lik $2$.\
+
+#v(4em)
+#oppgave("(b)") La $P_1=(5,1,1)$
+
+$
+K_1: &x^2      &&- 4x   &&+ y^2   &&- 2y   &&+z^2    &&- 6z    &&= 11 \
+     &(5)^2    &&- 4(5) &&+ (1)^2 &&- 2(1) &&+ (1)^2 &&- 6(1)  &&= 11 \
+     &10       &&- 20   &&+ 1     &&- 2    &&+ 1     &&- 6     &&= 11 \
+     &-10      &&       &&- 1     &&       &&    -5  &&        &&= 11 \
+$
+
+$
+K_2 :
+&x^2&&+y^2&&+z^2&&=4 \
+&(5)^2&&+(1)^2&&+(1)^2&&=4 \
+&25&&+1&&+1&&=4 \
+&27 && && &&=4 \
+$
+
+Ingen av kuleoverflatene inneholder $P_1$. 
+Gidder ikkje sjekke om dei er inni. Gløymte å bruke $K_1$ sin forbedre likning.\
+
+#v(4em)
+
+#oppgave("(c)") Vi finn skjeringspunkt.
+$
+m:
+cases(
+  x = -2,
+  y = t,
+  z = 2 + 4t
+)
+$
 
 #pagebreak()
 
 == Blanda oppgåver
+
+Fant dette: #underline[#link("https://sitandr.github.io/typst-examples-book/book/basics/math/alignment.html")]
