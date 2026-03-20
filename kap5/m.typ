@@ -1,5 +1,8 @@
-#set text(font: "Libertinus Serif", size: 11pt)
-#set page(margin: 2cm)
+#set page(margin: 1.75in)
+#set par(leading: 0.55em, spacing: 0.55em, first-line-indent: 1.8em, justify: true)
+#set text(font: "New Computer Modern")
+#show heading: set block(above: 1.4em, below: 1em)
+#set heading(numbering: "1.1 ")
 #set math.vec(delim: "[")
 #set math.mat(delim: "[")
 
@@ -151,3 +154,86 @@ der $alpha in [-90^circle.small, 90^circle.small]$ og $beta in chevron.l -180^ci
 I got a lot of bitches. $ "Amount of bitches" = overbrace(0 + 1 + dots.c + n, n + 1) $
 And also,
 $ "Amount of bitches"'=underbracket(9999 + 99999 + dots.c + oo, "Neverending, hehe xd") $
+
+
+#pagebreak()
+= Oppgåver
+
+== Blå oppgåver
+
+=== 5.121
+Vi har ei kule, $K$, med radius, $r=5$ og sentrum, $O(1,b,0)$. 
+Kula tangerer planet, $alpha$ gitt ved $3x+12y-4z=329$.
+Finn $b$.\
+Vi veit at berre eit punkt, $T$, vil ligge i planet og kula.
+Vi veit også at vektoren, $arrow(T O) parallel bold(n)$, der $bold(n)$ er normalvektoren til planet.
+Dette vil da bety at $O$ må vere plassert slik at distansen mellom $O$ og $alpha$ er lik $r$. \
+Vi bruker formel for distanse mellom punkt og plan. La
+$
+bold(n) = vec(a, b, c)
+$
+da får vi
+$
+D 
+&=
+(abs(a O_x + b O_y + c O_z + d))
+/
+(sqrt(a^2 + b^2 + c^2)) \
+
+&=
+(abs(3 (1) + 12 (b) + (-4) (0) + 329))
+/
+(sqrt((3)^2 + (12)^2 + (-4)^2)) \
+
+&=
+(abs(3 + 12 b + 329))
+/
+(sqrt(9 + 144 + 16)) \
+
+&=
+(abs(12 b + 332))
+/
+(sqrt(169)) \
+
+&=
+(abs(12 b + 332))
+/
+(13) \
+$
+Vi vet at $D=r$, så
+$
+(abs(12 b + 332))
+/
+(13)
+&=
+5\
+
+abs(12 b + 332)
+&=
+5 dot 13=65\
+
+12 b + 332
+&=
+plus.minus 65\
+
+b
+&=
+(plus.minus 65-332)
+/
+(12)
+\
+
+b 
+&= 
+cases(
+
+(65-332)
+/
+(12)=-22.25,
+(-65-332)
+/
+(12)=-(397)/(12),
+)
+$
+
+== Blanda oppgåver
