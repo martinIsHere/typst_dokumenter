@@ -428,3 +428,132 @@ $
 == Blanda oppgåver
 
 Fant dette: #underline[#link("https://sitandr.github.io/typst-examples-book/book/basics/math/alignment.html")]
+
+= Plan for øving
+Finn løysingsmetode for ofte brukte problemstillingar. Døme, distanse mellom to objekt, der informasjon om objektene er variabel.
+Løysinga skal vere godt eigna for _Geogebra_.
+== Distanse og nærmast punkt
+=== Kule vs kule
+Finne distanse. Sentruma $O_1, O_2$ og radiene $r_1, r_2$.
+$
+D=abs(O_1-O_2)-r_1-r_2
+$
+Finne nærmast punkt.
+$
+  P_1&=D (arrow(O_1 O_2))/(abs(arrow(O_1 O_2)))\
+  P_2&=D (arrow(O_2 O_1))/(abs(arrow(O_2 O_1)))
+$
+=== Punkt vs kule
+=== Linje vs kule
+=== Plan vs kule
+=== Linje vs punkt
+=== Plan vs punkt
+
+#pagebreak()
+== skjeringspunkt
+=== Kule vs kule
+Vi har kulene $K_1, K_2$. Sentruma $O_1, O_2$ og radiene $r_1, r_2$. Vi kan framstille dei som likningar eller parameterframstillingar. 
+Skjæringskurven vil vere ein sirkel med radius $r_3$.
+#figure(
+  image("assets/ggex2.png", width: 80%),
+  caption: [Geogebra illustrasjon av trekanten skapt av kulene og eit punkt på skjæringssirkelen.],
+) <tegn2>
+#v(1em)
+Vi ønsker å finne $abs(arrow(O_1 O_3))$. La $x=abs(arrow(O_1 O_3))$. Med pytagoras får vi da
+#v(1em)
+$
+  (r_2)^2&=x^2+(r_3)^2 \
+  (r_1)^2&=(D-x)^2+(r_3)^2 \
+$
+Subtraherer
+$
+  (r_2)^2 - (r_1)^2 &=x^2 - (D-x)^2 + (r_3)^2 - (r_3)^2 \
+  (r_2)^2 - (r_1)^2 &=x^2 - (D-x)^2 \
+  (r_2)^2 - (r_1)^2 &=x^2 - (D^2 - 2D x + x^2) \
+  (r_2)^2 - (r_1)^2 &=x^2 - D^2 + 2D x - x^2 \
+  (r_2)^2 - (r_1)^2 &=2D x - D^2 \
+  2D x&= (r_2)^2 - (r_1)^2 + D^2  \
+  abs(arrow(O_1 O_3)) = x  &= ((r_2)^2 - (r_1)^2 + D^2) / (2D)  \
+  abs(arrow(O_2 O_3)) = D-x&= ((r_1)^2 - (r_2)^2 + D^2) / (2D)  \
+$
+Sentrum til skjeringssirkelen blir da 
+$
+  O_3 &= O_1 + abs(arrow(O_1 O_3)) (arrow(O_1 O_2)) / (abs(arrow(O_1 O_2))) \
+  O_3 &= O_1 + (((r_2)^2 - (r_1)^2 + D^2) / (2D)) bold(v)
+  #h(2em) "der " bold(v)=(arrow(O_1 O_2)) / (abs(arrow(O_1 O_2)))\
+$
+
+Med _Geogebra_ var det best å løyse
+$
+  (r_2)^2&=x^2+(r_3)^2 \
+  (r_1)^2&=(D-x)^2+(r_3)^2 \
+$
+med _CAS_. Det klarte den fint, den gir da to løysingar for både radius og distanse. Dette klarer den berre dersom den har 
+nokre verdiar. Reint algebraisk, med berre ukjente, går det ikkje. Da må ein gjere utrekningane over.
+
+
+=== Plan vs kule
+Vi har planet $alpha$ og kulen $K_1$. Normalvektoren til planet, $bold(n)$ og punktet i planet $Q$. Sentrum $O$ og radien $R$. Vi kan framstille dei som likningar eller parameterframstillingar. 
+Skjæringskurven vil vere ein sirkel med radius $r$ og sentrum $P$.
+
+#figure(
+  image("assets/ggex3.png", width: 80%),
+  caption: [Planet $alpha$ og punktet $P$.],
+) <tegn4>
+
+#v(2em)
+Vi kan finne distansen D, som er distansen mellom sentrum til kulen og planet.
+$
+D &=
+(abs(a P_x + b P_y + c P_x + d)) 
+/
+(sqrt(a^2+b^2+c^2))
+= 
+(abs(bold(n) dot arrow(Q O))) 
+/ 
+abs(bold(n)) = abs(bold(hat(n)) dot arrow(Q O)) \
+
+&=
+(abs(bold(n) dot (O-Q))) 
+/
+abs(bold(n)) \
+
+&=
+(abs(bold(n) dot O - bold(n) dot Q))
+/
+abs(bold(n)) \
+$
+#v(1em)
+For å forklare $d$
+$
+a x+b y+b z+d&=0 \
+bold(n) dot (vec(x,y,z)-Q)&=0 \
+bold(n) dot vec(x,y,z) - bold(n) dot Q&=0 \
+bold(n) dot vec(x,y,z) + d&=0 #h(2em) "der " d=-bold(n) dot Q \
+$
+Altså
+$
+&(a x+b y+b z)&&+ (d)&=0 \
+&(bold(n) dot vec(x,y,z)) &&+ (-bold(n) dot Q)&=0 \
+$
+Tilbake til oppgåven, vi finn $r$
+$
+D^2 + r^2 &= R^2 \
+r^2 &= R^2 - D^2
+$
+Vi finn $P$
+$
+P &= O plus.minus D thin bold(hat(n)) \
+P &= O plus.minus D thin (bold(n)) / abs(bold(n)) \
+$
+Her endar vi opp med to løysingar. Dette kan unngås. Dersom vi beholder forteikn til $D$, og tillater negativ distanse så kan vi finne $P$ direkte.
+Vi gjer heller dette geometrisk, gjennom ei delvis utleiing av 
+$ D=abs(bold(hat(n)) dot arrow(Q O)) $
+Merk at 
+$ arrow(P O)=(bold(hat(n)) dot arrow(Q O)) bold(hat(n)) $
+
+#pagebreak()
+== Volum og overflate
+=== Kule
+=== Parallellpiped
+=== Liste over flere kjente
