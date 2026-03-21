@@ -561,6 +561,35 @@ Vektorane $bold(u), bold(v) "og" bold(w)$ er ikkje parallelle, og ligg ikkje i s
 - eit trekanta prisme med volum $1/2(bold(u) times bold(v)) dot bold(w)$
 - eit firkanta pyramide med volum $1/3(bold(u) times bold(v)) dot bold(w)$
 - eit tetraeder med volum $1/6(bold(u) times bold(v)) dot bold(w)$
+
 === Kule
 === Parallellpiped
+Grunngivelse for formelen $(bold(u) times bold(v)) dot bold(w)$. \
+La $G=abs(bold(u) times bold(v))$. Grunnflaten, areal.\
+La $bold(hat(x))=(bold(u) times bold(v)) / G$. Normalvektoren til grunnflaten.\
+Høyden til parallellepiped vil vere gitt med
+$
+h=abs(bold(hat(x)) dot bold(w)) #h(2em) bold(w) "projektert på " bold(hat(x))
+$
+Volumet er gitt med 
+$ 
+V=G h &= abs(bold(u) times bold(v)) dot abs(bold(hat(x)) dot bold(w)) \
+      &= abs(abs(bold(u) times bold(v)) dot bold(hat(x)) dot bold(w)) \
+      &= underline(abs((bold(u) times bold(v)) dot bold(w))) \
+$
 === Liste over flere kjente
+
+= Skalarproduktet
+Vi kan bruke skalarproduktet til dekompononering.
+$
+bold(v) = bold(v_1)+bold(v_2)
+$
+Gitt ein vektor $bold(hat(w))$.
+$
+bold(hat(w)) dot bold(v) &= abs(bold(v)) cos(theta) \
+bold(v_1) = (bold(hat(w)) dot bold(v)) bold(hat(w)) &= (abs(bold(v)) cos(theta))bold(hat(w))
+$
+Den andre komponenten, ortogonal til $bold(hat(w)) parallel bold(v_1)$ er da gitt ved
+$
+bold(v_2) = bold(v) - bold(v_1)
+$
