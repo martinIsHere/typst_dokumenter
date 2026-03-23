@@ -8,6 +8,8 @@
 #set par(spacing: 1.0em, first-line-indent: 0em)
 #show math.equation: set block(above:2em, below:2em)
 #set page(height: auto)
+#set page(fill: rgb("#0A000A"))
+#set text(fill: white)
 
 #let oppgave(input) = {
   strong(input) 
@@ -44,7 +46,7 @@ $
   (dif)/(dif mat(a,b;c,d))(e ^ (mat(a,b;c,d))) &= e ^ (mat(a,b;c,d)) \
 $
 
-Opphøyinga må altså returnere eit skalár. Vi ser på en og en identitet. Første
+Opphøyinga må altså returnere et skalár. Vi ser på en og en identitet. Første
 $
   x^(mat(a,b;c,d)) dot x^(mat(alpha, beta; gamma, delta)) &= x^(mat(a+alpha,b+beta;c+gamma,d+delta)) \
 $
