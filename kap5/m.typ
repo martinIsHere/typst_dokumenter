@@ -557,10 +557,10 @@ $ arrow(P O)=(bold(hat(n)) dot arrow(Q O)) bold(hat(n)) $
 
 Fra boka:\
 Vektorane $bold(u), bold(v) "og" bold(w)$ er ikkje parallelle, og ligg ikkje i same plan. Dei kan spenne ut 
-- eit parallellepiped med volum $(bold(u) times bold(v)) dot bold(w)$
-- eit trekanta prisme med volum $1/2(bold(u) times bold(v)) dot bold(w)$
-- eit firkanta pyramide med volum $1/3(bold(u) times bold(v)) dot bold(w)$
-- eit tetraeder med volum $1/6(bold(u) times bold(v)) dot bold(w)$
+- eit parallellepiped med volum $abs((bold(u) times bold(v)) dot bold(w))$
+- eit trekanta prisme med volum $1/2 abs((bold(u) times bold(v)) dot bold(w))$
+- eit firkanta pyramide med volum $1/3 abs((bold(u) times bold(v)) dot bold(w))$
+- eit tetraeder med volum $1/6 abs((bold(u) times bold(v)) dot bold(w))$
 
 === Kule
 === Parallellpiped

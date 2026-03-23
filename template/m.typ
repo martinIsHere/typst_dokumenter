@@ -1,7 +1,23 @@
-#set text(font: "Libertinus Serif", size: 11pt)
-#set page(margin: 2cm)
+#set page(margin: 1.75in)
+#set par(leading: 0.55em, spacing: 0.55em, first-line-indent: 1.8em, justify: true)
+#set text(font: "New Computer Modern")
+#show heading: set block(above: 1.4em, below: 1em)
+#set heading(numbering: "1.1 ")
 #set math.vec(delim: "[")
 #set math.mat(delim: "[")
+#set par(spacing: 0.5em, first-line-indent: 0em)
+
+#let oppgave(input) = {
+  strong(input) 
+  h(0.5cm)
+}
+
+/*
+#figure(
+  image("assets/ggex3.png", width: 80%),
+  caption: [Planet $alpha$ og punktet $P$.],
+) <tegn4>
+*/
 
 = R2
 == Punkt og plan
