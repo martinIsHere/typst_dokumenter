@@ -167,7 +167,6 @@ And also,
 $ "Amount of bitches"'=underbracket(9999 + 99999 + dots.c + oo, "Neverending, hehe xd") $
 
 
-#pagebreak()
 = Oppgåver
 
 == Blå oppgåver
@@ -247,7 +246,6 @@ cases(
 )
 $
 
-#pagebreak()
 
 === 5.121
 
@@ -331,7 +329,6 @@ $
 $
 Nevermind actually. Kva skal eg gjere då da? Sjekka fasit, dei brukte GG til å visuelt finne info om punkt. _Cringe cheats_.
 
-#pagebreak()
 
 == Raude oppgåver
 
@@ -430,7 +427,6 @@ $
 
 Fant dette: #underline[#link("https://sitandr.github.io/typst-examples-book/book/basics/math/alignment.html")]
 
-#pagebreak()
 
 = Plan for øving
 Finn løysingsmetode for ofte brukte problemstillingar. Døme, distanse mellom to objekt, der informasjon om objektene er variabel.
@@ -452,7 +448,6 @@ $
 === Linje vs punkt
 === Plan vs punkt
 
-#pagebreak()
 == skjeringspunkt
 === Kule vs kule
 Vi har kulene $K_1, K_2$. Sentruma $O_1, O_2$ og radiene $r_1, r_2$. Vi kan framstille dei som likningar eller parameterframstillingar. 
@@ -555,7 +550,6 @@ $ D=abs(bold(hat(n)) dot arrow(Q O)) $
 Merk at 
 $ arrow(P O)=(bold(hat(n)) dot arrow(Q O)) bold(hat(n)) $
 
-#pagebreak()
 == Volum og overflate
 
 Fra boka:\
