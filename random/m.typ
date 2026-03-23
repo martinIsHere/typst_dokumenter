@@ -35,7 +35,7 @@ $
 Vi bytter ut med $2 times 2$ matrise, $mat(a,b;c,d) "og" mat(alpha, beta; gamma, delta)$.
 #v(2em)
 $
-  x^(mat(a,b;c,d)) dot x^(mat(alpha, beta; gamma, delta)) &= x^((mat(a,b;c,d))+(mat(alpha, beta; gamma, delta))) \
+  x^(mat(a,b;c,d)) dot x^(mat(alpha, beta; gamma, delta)) &= x^(mat(a,b;c,d)+mat(alpha, beta; gamma, delta)) \
   (x^(mat(a,b;c,d))) ^(mat(alpha, beta; gamma, delta)) &= x^(mat(a,b;c,d) mat(alpha, beta; gamma, delta)) \
   forall mat(a,b;c,d) exists mat(alpha, beta; gamma, delta) : x^(mat(a,b;c,d)) dot x^(mat(alpha, beta; gamma, delta)) &= 1 \
   forall mat(a,b;c,d) exists mat(alpha, beta; gamma, delta) : (x^(mat(a,b;c,d))) ^(mat(alpha, beta; gamma, delta)) &= x \
