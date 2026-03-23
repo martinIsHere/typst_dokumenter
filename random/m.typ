@@ -42,7 +42,7 @@ $
   (dif)/(dif mat(a,b;c,d))(e ^ (mat(a,b;c,d))) &= e ^ (mat(a,b;c,d)) \
 $
 #v(2em)
-Vi ser på en og en identitet. Første
+Opphøyinga må altså returnere ein skalar. Vi ser på en og en identitet. Første
 $
   x^(mat(a,b;c,d)) dot x^(mat(alpha, beta; gamma, delta)) &= x^(mat(a+alpha,b+beta;c+gamma,d+delta)) \
 $
