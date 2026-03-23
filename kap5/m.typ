@@ -6,6 +6,11 @@
 #set math.vec(delim: "[")
 #set math.mat(delim: "[")
 #set par(spacing: 0.5em, first-line-indent: 0em)
+#set par(spacing: 1.0em, first-line-indent: 0em)
+#show math.equation: set block(above:2em, below:2em)
+#set page(height: auto)
+#set page(fill: rgb("#0A000A"))
+#set text(fill: white)
 
 #let oppgave(input) = {
   strong(input) 
@@ -591,6 +596,12 @@ Den andre komponenten, ortogonal til $bold(hat(w)) parallel bold(v_1)$ er da git
 $
 bold(v_2) = bold(v) - bold(v_1)
 $
+= Vinkel mellom plan
+Gitt to plan $alpha, beta$, finn vinkel mellom dei. Med normalvektorane
+$
+bold(hat(n))_alpha dot bold(hat(n))_beta = abs(cos(theta))
+$
+$theta in [0,pi]$ er vinkelen mellom vektorene. $cos^(-1)(abs(cos(theta)))$ vil den minste vinkelen mellom linjene gjennom origo med vektorenes retning. Dette er da vinkelen mellom plana.
 
 == Blanda oppgåver
 == Kapitteltest
