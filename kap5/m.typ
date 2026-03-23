@@ -423,11 +423,9 @@ cases(
 )
 $
 
-#pagebreak()
-
-== Blanda oppgåver
-
 Fant dette: #underline[#link("https://sitandr.github.io/typst-examples-book/book/basics/math/alignment.html")]
+
+#pagebreak()
 
 = Plan for øving
 Finn løysingsmetode for ofte brukte problemstillingar. Døme, distanse mellom to objekt, der informasjon om objektene er variabel.
@@ -593,3 +591,32 @@ Den andre komponenten, ortogonal til $bold(hat(w)) parallel bold(v_1)$ er da git
 $
 bold(v_2) = bold(v) - bold(v_1)
 $
+
+== Blanda oppgåver
+== Kapitteltest
+=== Oppgåve 5
+$
+K:cases(
+  x = 1.9 dot 10^(-4)cos(3.7 dot 10^(10) t) [m],
+  y = 1.9 dot 10^(-4)sin(3.7 dot 10^(10) t) [m],
+  z = 1.1 dot 10^(6) t [m],
+)\
+t "målt i "[s]
+$
+
+#v(1em)
+Danner _heliks_. $x "og" y$ danner sirkel om $z$-aksen. 
+$z$ beveger seg lineært. 
+Sirkelen har ei radius på $r=1.9 dot 10^(-4)[m]$. 
+Ein full rotasjon tar $T=(2 pi)/(3.7 dot 10^(10))[s]$
+Langs $z$-aksen har positronet ein fart på $v_z=1.1 dot 10^6$
+Positronet farten 
+$ 
+v &= abs(d / (dif t) vec(x,y,z)) \
+  &= (2 pi r) / (T) + v_z \
+  &= ((2 pi) 3.7 dot 10^(10) dot 1.9 dot 10^(-4)) / (2 pi) + 1.1 dot 10^6 \
+  &=  3.7 dot 10^(10) dot 1.9 dot 10^(-4) + 1.1 dot 10^6 \
+  &=  (3.7 dot 1.9) dot 10^(6) + (1.1) dot 10^6 \
+  &=  (3.7 dot 1.9 + 1.1) dot 10^6 \
+$
+
