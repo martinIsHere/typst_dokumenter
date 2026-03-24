@@ -626,3 +626,22 @@ v &= abs(dif / (dif t) vec(x,y,z)) \
   &=  (3.7 dot 1.9 + 1.1) dot 10^6 \
 $
 
+$ sqrt(4^2+5^2+8^2) $
+$ sqrt(4^2+5^2+8^2) $
+
+$
+arrow(r)(t)=vec(
+  1/6 t^3 + 3,
+  e^(-t)+t+3, 
+  5t
+)
+$
+
+$
+integral.double  arrow(a)(t) dif t dif t = vec(
+  1/6 t^3 + 3,
+  e^(-t)+t+3, 
+  5t
+)
+
+$
