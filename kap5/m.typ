@@ -618,7 +618,7 @@ Ein full rotasjon tar $T=(2 pi)/(3.7 dot 10^(10))[s]$
 Langs $z$-aksen har positronet ein fart på $v_z=1.1 dot 10^6$
 Positronet farten 
 $ 
-v &= abs(d / (dif t) vec(x,y,z)) \
+v &= abs(dif / (dif t) vec(x,y,z)) \
   &= (2 pi r) / (T) + v_z \
   &= ((2 pi) 3.7 dot 10^(10) dot 1.9 dot 10^(-4)) / (2 pi) + 1.1 dot 10^6 \
   &=  3.7 dot 10^(10) dot 1.9 dot 10^(-4) + 1.1 dot 10^6 \
