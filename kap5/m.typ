@@ -525,7 +525,7 @@ $
 #v(1em)
 For å forklare $d$
 $
-a x+b y+b z+d&=0 \
+a x+b y+c z+d&=0 \
 bold(n) dot (vec(x,y,z)-Q)&=0 \
 bold(n) dot vec(x,y,z) - bold(n) dot Q&=0 \
 bold(n) dot vec(x,y,z) + d&=0 #h(2em) "der " d=-bold(n) dot Q \
@@ -615,7 +615,7 @@ Danner _heliks_. $x "og" y$ danner sirkel om $z$-aksen.
 $z$ beveger seg lineært. 
 Sirkelen har ei radius på $r=1.9 dot 10^(-4)[m]$. 
 Ein full rotasjon tar $T=(2 pi)/(3.7 dot 10^(10))[s]$
-Langs $z$-aksen har positronet ein fart på $v_z=1.1 dot 10^6$
+langs $z$-aksen har positronet ein fart på $v_z=1.1 dot 10^6$
 Positronet farten 
 $ 
 v &= abs(dif / (dif t) vec(x,y,z)) \
