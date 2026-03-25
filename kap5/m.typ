@@ -10,7 +10,9 @@
 #show math.equation: set block(above:2em, below:2em)
 #set page(height: auto)
 #set page(fill: rgb("#0A000A"))
+#set page(fill: rgb("#FFFFFF"))
 #set text(fill: white)
+#set text(fill: black)
 
 #let oppgave(input) = {
   strong(input) 
@@ -596,7 +598,7 @@ Gitt to plan $alpha, beta$, finn vinkel mellom dei. Med normalvektorane
 $
 bold(hat(n))_alpha dot bold(hat(n))_beta = abs(cos(theta))
 $
-$theta in [0,pi]$ er vinkelen mellom vektorene. $cos^(-1)(abs(cos(theta)))$ vil den minste vinkelen mellom linjene gjennom origo med vektorenes retning. Dette er da vinkelen mellom plana.
+$theta in [0,pi]$ er vinkelen mellom vektorene. $cos^(-1)(abs(cos(theta)))$ vil vere den minste vinkelen mellom linjene gjennom origo med vektorenes retning. Dette er da vinkelen mellom plana.
 
 == Blanda oppgåver
 == Kapitteltest
@@ -644,4 +646,28 @@ integral.double  arrow(a)(t) dif t dif t = vec(
   5t
 )
 
+$
+
+
+$
+4 sqrt(2500  cos^2( t ) + 2500 sin ^2( t ) + 1) \
+=4 sqrt(2500  (cos^2( t ) + sin ^2( t )) + 1) \ 
+=4 sqrt(2500  (1^2) + 1) \ 
+=4 sqrt(2500 + 1) \ 
+=4 sqrt(2501) \ 
+$
+
+$
+
+  v_("sirkel")&= (2 pi r) / (T) \
+  &= (2 pi 200) / (2 pi) \
+  &= 200 [m/s]
+$
+
+$
+cal(l)_"skjering" : cases(
+  x=2 t,
+  y=9/2 - 5 t,
+  z=13/2 - 3t
+)
 $
