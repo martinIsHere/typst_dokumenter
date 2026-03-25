@@ -10,9 +10,7 @@
 #show math.equation: set block(above:2em, below:2em)
 #set page(height: auto)
 #set page(fill: rgb("#0A000A"))
-#set page(fill: rgb("#FFFFFF"))
 #set text(fill: white)
-#set text(fill: black)
 
 #let oppgave(input) = {
   strong(input) 
