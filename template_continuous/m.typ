@@ -63,3 +63,5 @@ Da får vi
 $
   (x^(mat(a,b;c,d))) ^(mat(alpha, beta; gamma, delta)) &= x^(mat(a alpha + b gamma, a beta + b delta;c alpha + d gamma, c beta + d delta)) \
 $
+
+#v(30em)
