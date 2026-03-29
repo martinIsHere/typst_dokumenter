@@ -245,27 +245,39 @@ $
 
 Kva arbeid blir gjort på eit objekt som flytter seg ut i eit grav.felt? Arbeidet må vere negativt dersom objektets avstand frå sentrum av grav.feltet aukar.
 
+Vi lar kurven $C$ vere gitt ved
 $
-integral_1^2 arrow(G)(s) dif arrow(s) < 0
+s(t):=t, quad 0<=t
+$
+Ein stråle ut ifrå origo. $arrow(G)$ vil alltid vere retta mot origo
+
+$
+integral_(C) arrow(G) dot dif arrow(s)&=
+integral_(s_1)^(s_2) cos(theta) G dif s< 0
+$
+$theta$ må vere konstant og må oppfylle $cos(theta)=-1$.
+$
+integral_(s_1)^(s_2) - G dif s< 0, quad "der" 0<=s_1 < s_2
 $
 
-Dette arbeidet er lik energien nødvendig for å forflytte objektet fra $1$ til $2$. Siden $arrow(G)$ alltid vil vere motsett retta forflytningen $dif s$ ($pi$ radianer mellom dem),
+Dette arbeidet er lik energien nødvendig for å forflytte objektet fra $s_1$ til $s_2$. 
 
-$
-integral_1^2 -abs(arrow(G)(s)) dif s < 0
-$
 Vi kjenner magnituden til krafta: $G$
 $
-G = k (M m) / r^2
+G = k (M m) / s^2
 $
 Den nødvendige energien for å få planeten til å kunne unnslippe feltet er da lik
 $
-E_k &= integral_s^(oo) -abs(arrow(G)(s)) dif s \
-E_k &= - integral^s_(oo) -abs(arrow(G)(s)) dif s \
-E_k &= integral^s_(oo) abs(arrow(G)(s)) dif s \
-E_k &= integral^s_(oo) abs(arrow(G)(s)) dif s \
-E_k &= E_p \
+E_k &= integral_s^(oo) -G dif s \
+E_k&= - integral_s^(oo) k (M m) / r^2 dif s \
+E_k&= - (-k (M m) / s lr(|,size:#200%)_s^(oo)) \
+E_k&= - (lim_(r->oo)-k (M m) / r - (-k (M m) / s)) \
+E_k&= - (0 + k (M m) / s) \
+E_k&= - k (M m) / s \
 $
-
+Svar på oppgåven
+$
+E_k&= - G_"grav." (M_"jord" m_"asteroide") / (5000 thick [k m]) quad [J] \
+$
 
 #v(30em)
