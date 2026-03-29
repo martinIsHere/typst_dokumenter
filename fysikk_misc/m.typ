@@ -1,5 +1,4 @@
 #set page(margin: 1.75in)
-#set page(margin: 2.75in)
 #set par(leading: 1.00em, spacing: 1.00em, first-line-indent: 1.8em, justify: true)
 #set text(font: "New Computer Modern")
 #show heading: set block(above: 1.4em, below: 1em)
@@ -8,6 +7,9 @@
 #set math.mat(delim: "[")
 #set par(spacing: 1.0em, first-line-indent: 0em)
 #show math.equation: set block(above:2em, below:2em)
+// sketchy
+#show math.equation: set text(15pt)
+//
 #set page(height: auto)
 #set page(fill: rgb("#0A000A"))
 #set text(fill: white)
@@ -260,7 +262,7 @@ $
 integral_(s_1)^(s_2) - G dif s< 0, quad "der" 0<=s_1 < s_2
 $
 
-Dette arbeidet er lik energien nødvendig for å forflytte objektet fra $s_1$ til $s_2$. 
+Dette arbeidet er lik energien gongar $-1$ nødvendig for å forflytte objektet fra $s_1$ til $s_2$. 
 
 Vi kjenner magnituden til krafta: $G$
 $
@@ -268,16 +270,20 @@ G = k (M m) / s^2
 $
 Den nødvendige energien for å få planeten til å kunne unnslippe feltet er da lik
 $
-E_k &= integral_s^(oo) -G dif s \
-E_k&= - integral_s^(oo) k (M m) / r^2 dif s \
-E_k&= - (-k (M m) / s lr(|,size:#200%)_s^(oo)) \
-E_k&= - (lim_(r->oo)-k (M m) / r - (-k (M m) / s)) \
-E_k&= - (0 + k (M m) / s) \
-E_k&= - k (M m) / s \
+E_k &= - integral_s^(oo) -G dif s \
+E_k&= integral_s^(oo) k (M m) / r^2 dif s \
+E_k&= (-k (M m) / s lr(|,size:#200%)_s^(oo)) \
+E_k&= (lim_(r->oo)-k (M m) / r - (-k (M m) / s)) \
+E_k&= (0 + k (M m) / s) \
+E_k&= k (M m) / s \
 $
 Svar på oppgåven
 $
-E_k&= - G_"grav." (M_"jord" m_"asteroide") / (5000 thick [k m]) quad [J] \
+E_k&= G_"grav." (M_"jord" m_"asteroide") / (5000 thick [k m]) quad [J] \
+$
+Dersom vi reknar relativistisk:
+$
+E=
 $
 
 #v(30em)
