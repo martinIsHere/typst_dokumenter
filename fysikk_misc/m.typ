@@ -280,10 +280,36 @@ $
 Svar på oppgåven
 $
 E_k&= G_"grav." (M_"jord" m_"asteroide") / (5000 thick [k m]) quad [J] \
+1/2 m_"asteroide" v^2&= G_"grav." (M_"jord" m_"asteroide") / (5000 thick [k m]) quad [J] \
+1/2 v^2&= G_"grav." (M_"jord") / (5000 thick [k m]) quad [m^2/s^2] \
+v^2&= 2 G_"grav." (M_"jord") / (5000 thick [k m]) quad [m^2/s^2] \
+v&= sqrt(2 G_"grav." (M_"jord") / (5000 thick [k m])) quad [m/s] \
 $
 Dersom vi reknar relativistisk:
+Utleiing av Lorentz' konstant, $gamma$
+
 $
-E=
+(c t_1)^2 &= (c t_0)^2 + (v t_1) ^2 \
+c^2 t_1^2 - v^2 t_1 ^2  &= c^2 t_0^2 \
+c^2 t_0^2 &= c^2 t_1^2 - v^2 t_1 ^2 \
+t_0^2 &= (c^2 t_1^2 - v^2 t_1 ^2) / (c^2) \
+t_0 &= sqrt((c^2 t_1^2 - v^2 t_1 ^2) / (c^2)) \
+t_0 &= t_1 sqrt((1 - v^2 / c^2)) \
+t_1 &= t_0 1/sqrt((1 - v^2 / c^2)) \
+t_1 &= t_0 gamma \
 $
+
+=== Oppgåve 5
+
+$
+v_f = sqrt(
+  v_i^2 [upright(m^2/s^2)] 
++ (2 q U)/(m) thick [upright(J/(k g))])
+quad [upright(m/s)]
+$
+
+
+
+
 
 #v(30em)
