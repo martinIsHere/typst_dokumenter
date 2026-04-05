@@ -309,6 +309,17 @@ quad [upright(m/s)]
 $
 
 
+= Relativistisk rekning
+
+== Derivasjon av lengdeforkortingsformel
+
+Vi har to referansesystem, $M_0, M_1$. Vi har eit objekt med farten $v_0$ i $M_0$ og $v_1=0$ i $M_1$. 
+I $M_0$ vil objektet leggje bak seg ei distanse $s_0 = v_0 t_0$. Tida i $M_1$, $t_1=gamma t_0$. Farten vil vere lik, men kva som er i rørsle vil variere.
+I $M_1$ vil referansesystemet $M_0$ vere i rørsle, med fart $v_1=v_0$. Distansen som $M_0$ flytter seg vil vere lik $v_1 t_1 = v_0 t_1$.
+$ 
+v_0 t_1 &= gamma v_0 t_0 = gamma s_0
+$
+Denne lengda $s_0$ vil altså forkortast i $M_1$ til $s_1=gamma s_0$. Dette motrstrider vel den kjente formelen: $L = L_0 / gamma$?
 
 
 
