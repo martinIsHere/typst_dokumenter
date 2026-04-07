@@ -326,7 +326,25 @@ $
 overline(cal(E)) &= 1/(a-b) integral_a^b cal(E) dif t \
 1/("tidsrom") integral_a^b A sin omega t dif t
 &=
-1/("tidsrom") integral_a^b A sin omega t dif t \
+A /(T) integral_(omega a)^(omega b) sin u 1 / dot(u) dif u \
+
+A/(T) integral_(omega a)^(omega b) sin u dot 1 / (omega) dif u
+&=
+A/(T omega) integral_(omega a)^(omega b) sin u dif u \
+
+A/(T omega) lr(|,size:#170%)(cos u)lr(|,size:#170%)_(omega a)^(omega b)
+&=
+A/(T omega) lr(|,size:#170%)(cos omega t)lr(|,size:#170%)_(a)^(b) \
+
+&= A/(T omega) (cos omega b - cos omega a)
+$
+Finner max
+$
+overline(cal(E))_"max" &= A/(T omega) (cos omega b - cos omega a) \
+
+A/(T omega) (1 - (-1))
+&=
+2 A/(T omega) \
 $
 
 #v(30em)
