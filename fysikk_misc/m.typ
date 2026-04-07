@@ -322,5 +322,11 @@ $
 Denne lengda $s_0$ vil altså forkortast i $M_1$ til $s_1=gamma s_0$. Dette motrstrider vel den kjente formelen: $L = L_0 / gamma$?
 
 
+$
+overline(cal(E)) &= 1/(a-b) integral_a^b cal(E) dif t \
+1/("tidsrom") integral_a^b A sin omega t dif t
+&=
+1/("tidsrom") integral_a^b A sin omega t dif t \
+$
 
 #v(30em)
